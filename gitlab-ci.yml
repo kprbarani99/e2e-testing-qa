@@ -1,0 +1,15 @@
+image: alpine
+
+stages:
+    - deploy
+    - e2e
+
+deploy:
+    stage: deploy
+    script: 
+        - echo "This is the deploy job."
+
+e2e:
+    stage: e2e
+    script:         
+        - echo "This is the E2E job."
