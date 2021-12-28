@@ -23,8 +23,16 @@ jobs:
   
 
     steps:
-        - name: e2e-testing-qa repo - deploy
+        - name: e2e-testing-qa repo - Set up Python
+          uses: actions/setup-python@v2
+          with:
+              python-version: "3.9"
+        
+        - name: e2e-testing-qa repo - Display Python version
+          run: python -c "import sys; print(sys.version)"
+        
+        - name: e2e-testing-qa repo - Deploy
           run: echo "e2e-testing-qa repo -  deploy job completed."
     
-        - name: e2e-testing-qa repo - e2e
+        - name: e2e-testing-qa repo - E2E
           run: echo "e2e-testing-qa repo - E2E job completed."
