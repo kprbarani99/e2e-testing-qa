@@ -24,7 +24,7 @@ jobs:
 
     steps:
         - name: deploy
-          run: echo "This is the deploy job."
+          run: echo "e2e-testing-qa repo -  deploy job."
     
         - name: e2e
-          run: echo "This is the E2E job."
+          run: echo "e2e-testing-qa repo - E2E job."
